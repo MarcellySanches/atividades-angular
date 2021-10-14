@@ -1,0 +1,77 @@
+<!-- MENU, TOLLBAR E BADGE -->
+<mat-toolbar color="primary">
+
+  <button mat-button [matMenuTriggerFor]="meuMenu" class="btnMenu">Menu Drop</button>
+  <mat-menu #meuMenu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+
+  <mat-icon matBadge="15" matBadgeColor="warn" class="home">home</mat-icon>
+    <span class="cdk-visually-hidden">
+      15
+    </span>
+</mat-toolbar>
+
+
+<mat-sidenav-container color="primary">
+  <mat-sidenav-content>
+    <button mat-button (click)="variavelLocalSidenav.toggle()">
+      SIDENAV
+    </button>
+  </mat-sidenav-content>
+
+  <mat-sidenav #variavelLocalSidenav mode="side" style="background-color: rgb(195, 0, 255); color: white;">
+    Conteúdo da sidenav
+ </mat-sidenav>
+</mat-sidenav-container>
+
+<!-- TAB -->
+<mat-tab-group>
+  <mat-tab label="Tab1">
+    <p>
+      Conteúdo 1
+    </p>
+  </mat-tab>
+
+  <mat-tab label="Tab2">
+
+    <p>
+      Conteúdo 2
+    </p>
+
+  </mat-tab>
+  <mat-tab label="Tab3">
+    <p>
+      Conteúdo 3
+    </p>
+  </mat-tab>
+</mat-tab-group>
+
+<!-- LISTA -->
+<mat-list role="list">
+  <mat-list-item role="listitem">Componentes do Angular Material utilizados nesta atividade:</mat-list-item>
+  <mat-list-item role="listitem">Menu com toolbar</mat-list-item>
+  <mat-list-item role="listitem">badge</mat-list-item>
+  <mat-list-item role="listitem">tabs</mat-list-item>
+  <mat-list-item role="listitem">button</mat-list-item>
+  <mat-list-item role="listitem">sidenav com toogle</mat-list-item>
+  <mat-list-item role="listitem">botão redondo</mat-list-item>
+</mat-list>
+
+<br>
+
+
+<h1>Botão redondo</h1>
+<div class="example-button-row">
+  <button mat-fab>BTN</button>
+</div>
+
+
+
+
+
+
+
+
+
